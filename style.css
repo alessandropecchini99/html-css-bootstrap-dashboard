@@ -1,0 +1,58 @@
+ul {
+    list-style: none;
+}
+
+/* NAVBAR */
+.mobile_logo {
+    aspect-ratio: 1 / 1;
+    width: 50px;
+}
+
+.navbar .input-group input {
+    padding-left: 0px;
+}
+
+.navbar .input-group input::placeholder {
+    font-size: 0.8em;
+}
+
+
+/* MAIN */
+main {
+    height: calc(100vh - 7.5vh);
+}
+
+/****** sidebar ******/
+.sidebar {
+    flex: 0 0 120px;
+    background-color: #051E34;
+    background-image: url(/img/sidebar-bg.png);
+}
+
+.sidebar ul li {
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+/****** content ******/
+.content {
+    flex-basis: calc(100% - 120px);
+    overflow-y: auto;
+}
+
+
+
+
+
+/******************************
+***** CUSTOM MEDIA QUERY ******
+******************************/
+@media screen and (max-width: 768px) {
+    .sidebar {
+        flex: 0 0 70px;
+    }
+
+    .content {
+        flex-basis: calc(100% - 70px);
+    }
+}
