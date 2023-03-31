@@ -24,7 +24,7 @@ main {
 
 /****** sidebar ******/
 .sidebar {
-    flex: 0 0 120px;
+    flex: 0 0 fit-content;
     background-color: #051E34;
     background-image: url(/img/sidebar-bg.png);
 }
