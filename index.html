@@ -17,7 +17,7 @@
   <body style="height: 100vh;">
     
     <!-- NAVBAR -->
-    <nav class="navbar" style="height: 7.5vh; background-color: white;">
+    <nav class="navbar py-3" style="background-color: white;">
       <div class="container-fluid">
         
         <div class="row w-100">
@@ -29,20 +29,20 @@
             </a>
           </div>
           <!-- search bar -->
-          <div class="col-9 d-flex justify-content-start" style="padding-left: 0;">
+          <div class="col d-flex justify-content-start" style="padding-left: 0;">
             <div class="input-group w-100">
               <span class="input-group-text bg-light" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
               <input type="text" class="form-control bg-light" placeholder="Prova a cercare: Lezioni di Lavarel"aria-label="Username" aria-describedby="basic-addon1" style="border-left: 0;">
             </div>
           </div>
           <!-- icons -->
-          <div class="col-1 d-flex align-items-center justify-content-between p-0">
-            <a class="not text-decoration-none text-black d-xs-none d-md-block" href="#"><i class="d-none d-md-block fa-solid fa-list-ul"></i></a>
-            <a class="text-decoration-none text-black d-xs-none d-md-block" href="#"><i class="d-none d-md-block fa-solid fa-circle-question"></i></a>
-            <a class="text-decoration-none text-black d-xs-none d-md-block" href="#"><i class="d-none d-md-block fa-solid fa-ellipsis-vertical"></i></a>
+          <div class="col-auto d-flex align-items-center justify-content-between p-0">
+            <a class="not text-decoration-none text-black d-none d-md-block p-1" href="#"><i class="fa-solid fa-list-ul"></i></a>
+            <a class="text-decoration-none text-black d-none d-md-block p-1" href="#"><i class="fa-solid fa-circle-question"></i></a>
+            <a class="text-decoration-none text-black d-none d-md-block p-1" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
             <div class="dropdown">
               <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fa-solid fa-bell" style="color: #ff8f00;"></i>
+                <i class="fa-solid fa-bell" style="color: #ff8f00; padding-left: 5px;"></i>
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -58,11 +58,11 @@
 
 
     <!-- MAIN -->
-    <main class="d-flex row">
+    <main class="d-flex">
 
       <!-- sidebar -->
-      <div class="sidebar col-auto text-white d-flex flex-column justify-content-between" style="padding-top: 1em;">
-        <ul class="d-none d-md-block p-0" style="">
+      <div class="sidebar col-auto text-white d-flex flex-column justify-content-between p-3">
+        <ul class="d-none d-md-block p-0">
           <li class="px-0 mx-auto"> <i class="fa-solid fa-house"></i><span class="px-2">Home</span></li>
           <li class="px-0 mx-auto"> <i class="fa-solid fa-chart-simple"></i><span class="px-2">Stats</span></li>
           <li class="px-0 mx-auto"> <i class="fa-solid fa-signal"></i><span style="padding-inline: 8px 0px;">Signals</span></li>
@@ -84,13 +84,13 @@
       </div>
 
       <!-- content -->
-      <div class="content col p-0">
-        <div class="top_content row d-flex justify-content-between text-white w-100 m-0 px-4" style="background-color: #368aff; padding-top: 0.6em;">
+      <div class="content col">
+        <div class="top_content row d-flex justify-content-between text-white w-100 h-auto m-0 px-4" style="background-color: #368aff;">
             <!-- 1° -->
-            <div class="col-md-2 col-sm-12 order-md-3">
+            <div class="col-lg-2 col-sm order-sm-3 py-2">
               <span>Nuovo Studente</span>
               <button class="btn border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="margin-left: 5px;"><i class="fa-solid fa-plus text-white"></i></button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -102,7 +102,7 @@
             </div>
 
             <!-- 2° -->
-            <div class="col-md-5 col-sm-12">
+            <div class="col-lg-5 col-sm py-2">
               <div class="d-flex">
                 <h2>Boolean</h2>
                 <span class="badge text-bg-primary align-self-center rounded-pill m-2">Primary</span>
@@ -110,15 +110,15 @@
               <div>
                 <span class="badge text-bg-primary align-self-center rounded-pill">3 App</span>
                 <i class="fa-solid fa-angles-right"></i>
-                <span class="badge text-bg-primary align-self-center rounded-pill d-lg-inline d-sm-none">Boolean Mobile App</span>
-                <span class="badge text-bg-primary align-self-center rounded-pill d-lg-inline d-sm-none">Boolean Web App</span>
-                <span class="badge text-bg-primary align-self-center rounded-pill d-lg-inline d-sm-none">Boolean Blog App</span>
-                <span class="badge text-bg-primary align-self-center rounded-pill d-md-inline d-lg-none">+</span>
+                <span class="badge text-bg-primary align-self-center rounded-pill d-md-inline d-none">Boolean Mobile App</span>
+                <span class="badge text-bg-primary align-self-center rounded-pill d-md-inline d-none">Boolean Web App</span>
+                <span class="badge text-bg-primary align-self-center rounded-pill d-md-inline d-none">Boolean Blog App</span>
+                <span class="badge text-bg-primary align-self-center rounded-pill d-inline d-md-none">+</span>
               </div>
             </div>
             
             <!-- 3° -->
-            <div class="col-md-5 col-sm-12">
+            <div class="col-lg-5 col-sm py-2">
               <p>Studenti online negli ultimi 30 giorni</p>
               <h2>125</h2>
             </div>

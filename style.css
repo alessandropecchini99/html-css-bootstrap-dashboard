@@ -19,7 +19,7 @@ ul {
 
 /* MAIN */
 main {
-    height: calc(100vh - 7.5vh);
+    height: calc(100vh);
 }
 
 /****** sidebar ******/
@@ -38,19 +38,3 @@ main {
     overflow-y: auto;
 }
 
-
-
-
-
-/******************************
-***** CUSTOM MEDIA QUERY ******
-******************************/
-/* @media screen and (max-width: 768px) {
-    .sidebar {
-        flex: 0 0 70px;
-    }
-
-    .content {
-        flex-basis: calc(100% - 70px);
-    }
-} */
