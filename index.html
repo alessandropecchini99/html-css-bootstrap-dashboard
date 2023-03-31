@@ -32,7 +32,7 @@
           <div class="col d-flex justify-content-start" style="padding-left: 0;">
             <div class="input-group w-100">
               <span class="input-group-text bg-light" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
-              <input type="text" class="form-control bg-light" placeholder="Prova a cercare: Lezioni di Lavarel"aria-label="Username" aria-describedby="basic-addon1" style="border-left: 0;">
+              <input type="text" class="form-control bg-light" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Username" aria-describedby="basic-addon1" style="border-left: 0;">
             </div>
           </div>
           <!-- icons -->
@@ -90,13 +90,83 @@
             <div class="col-lg-2 col-sm order-sm-3 py-2">
               <span>Nuovo Studente</span>
               <button class="btn border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="margin-left: 5px;"><i class="fa-solid fa-plus text-white"></i></button>
-              <div class="offcanvas offcanvas-end w-100" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                  <!-- ... INSERIRE FORM -->
+                  <form action="new-student">
+                    <div class="row">
+                      <div class="col-6 mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Alessandro">
+                      </div>
+                      <div class="col-6 mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Pecchini">
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-6 mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <div class="input-group mb-3 col-12">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                          <input type="mail" class="form-control" placeholder="email@email.com" aria-label="email" aria-describedby="basic-addon1">
+                        </div>                      
+                      </div>
+                      <div class="col-6 mb-3">
+                        <label for="inputPassword5" class="form-label">Password</label>
+                        <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock">
+                        <div id="passwordHelpBlock" class="form-text">
+                          Your password must be 0-∞ characters long.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Indirizzo</label>
+                      <input type="text" class="form-control" id="exampleFormControlInput1">
+                    </div>
+
+                    <div class="row">
+                      <div class="col-6 mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Reggio Emilia">
+                      </div>
+                      <div class="col-4 mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Stato</label>
+                        <div class="input-group mb-3">
+                          <select class="form-select" id="inputGroupSelect02">
+                            <option selected>Scegli...</option>
+                            <option value="1">Italia</option>
+                            <option value="2">Giappone</option>
+                            <option value="3">Regno dei funghi</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-2 mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">CAP</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="12345">
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Foto</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div>
+
+                    <div class="my-3">
+                      <input type="checkbox">
+                      <span>Seleziona per proseguire</span>
+                    </div>
+
+                    <div>
+                      <button type="button" class="btn btn-primary">Salva</button>
+                      <button type="button" class="btn btn-warning">Svuota</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
@@ -105,7 +175,7 @@
             <div class="col-lg-5 col-sm py-2">
               <div class="d-flex">
                 <h2>Boolean</h2>
-                <span class="badge text-bg-primary align-self-center rounded-pill m-2">Primary</span>
+                <span class="badge text-bg-primary align-self-center rounded-pill m-2">Piano Blaze</span>
               </div>
               <div>
                 <span class="badge text-bg-primary align-self-center rounded-pill">3 App</span>
@@ -122,9 +192,10 @@
               <p>Studenti online negli ultimi 30 giorni</p>
               <h2>125</h2>
             </div>
-
-
         </div>
+
+        
+
       </div>
 
     </main>
