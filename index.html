@@ -22,7 +22,7 @@
         
         <div class="row w-100">
           <!-- logo -->
-          <div class="col-2 d-flex align-items-center">
+          <div class="col-auto d-flex align-items-center">
             <a class="navbar-brand m-0 p-0" href="#">
             <img src="/img/logo.svg" alt="logo" class="d-none d-md-block w-100">
             <img src="/img/mobile-logo.png" alt="logo" class="d-md-none d-xs-block mobile_logo">
@@ -58,24 +58,24 @@
 
 
     <!-- MAIN -->
-    <main class="d-flex">
+    <main class="d-flex row">
 
       <!-- sidebar -->
-      <div class="sidebar text-white d-flex flex-column justify-content-between px-3" style="padding-top: 1em;">
-        <ul class="fa-ul d-none d-md-block">
-          <li> <span class="fa-li"><i class="fa-solid fa-house"></i></span>Home</li>
-          <li> <span class="fa-li"><i class="fa-solid fa-chart-simple"></i></span>Stats</li>
-          <li> <span class="fa-li"><i class="fa-solid fa-signal"></i></span>Signals</li>
+      <div class="sidebar col-auto text-white d-flex flex-column justify-content-between" style="padding-top: 1em;">
+        <ul class="d-none d-md-block p-0" style="">
+          <li class="px-0 mx-auto"> <i class="fa-solid fa-house"></i><span class="px-2">Home</span></li>
+          <li class="px-0 mx-auto"> <i class="fa-solid fa-chart-simple"></i><span class="px-2">Stats</span></li>
+          <li class="px-0 mx-auto"> <i class="fa-solid fa-signal"></i><span style="padding-inline: 8px 0px;">Signals</span></li>
         </ul>
 
         <ul class="d-md-none d-xs-block p-0 text-center fs-2">
-          <li class="px-0"><i class="fa-solid fa-house"></i></li>
-          <li class="px-0"><i class="fa-solid fa-chart-simple"></i></li>
-          <li class="px-0"><i class="fa-solid fa-signal"></i></li>
+          <li class="px-0"> <i class="fa-solid fa-house"></i></li>
+          <li class="px-0"> <i class="fa-solid fa-chart-simple"></i></li>
+          <li class="px-0"> <i class="fa-solid fa-signal"></i></li>
         </ul>
 
-        <ul class="fa-ul d-none d-md-block">
-          <li><span class="fa-li"><i class="fa-solid fa-gear"></i></span>Admin</li>
+        <ul class="d-none d-md-block p-0">
+          <li class="px-0"><i class="fa-solid fa-gear "></i><span class="px-2">Admin</span></li>
         </ul>
 
         <ul class="d-md-none d-xs-block p-0 text-center fs-2">
@@ -84,10 +84,25 @@
       </div>
 
       <!-- content -->
-      <div class="content text-white">
-        <div class="top_content d-flex justify-content-between w-100 px-4" style="background-color: #368aff; padding-top: 0.6em;">
+      <div class="content col p-0">
+        <div class="top_content row d-flex justify-content-between text-white w-100 m-0 px-4" style="background-color: #368aff; padding-top: 0.6em;">
             <!-- 1° -->
-            <div>
+            <div class="col-md-2 col-sm-12 order-md-3">
+              <span>Nuovo Studente</span>
+              <button class="btn border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="margin-left: 5px;"><i class="fa-solid fa-plus text-white"></i></button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <!-- ... INSERIRE FORM -->
+                </div>
+              </div>
+            </div>
+
+            <!-- 2° -->
+            <div class="col-md-5 col-sm-12">
               <div class="d-flex">
                 <h2>Boolean</h2>
                 <span class="badge text-bg-primary align-self-center rounded-pill m-2">Primary</span>
@@ -101,27 +116,13 @@
                 <span class="badge text-bg-primary align-self-center rounded-pill d-md-inline d-lg-none">+</span>
               </div>
             </div>
-
-            <!-- 2° -->
-            <div>
+            
+            <!-- 3° -->
+            <div class="col-md-5 col-sm-12">
               <p>Studenti online negli ultimi 30 giorni</p>
               <h2>125</h2>
             </div>
 
-          <!-- 3° -->
-          <div>
-            <span>Nuovo Studente</span>
-            <button class="btn border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="margin-left: 5px;"><i class="fa-solid fa-plus text-white"></i></button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <!-- ... INSERIRE FORM -->
-              </div>
-            </div>
-          </div>
 
         </div>
       </div>

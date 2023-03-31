@@ -24,7 +24,6 @@ main {
 
 /****** sidebar ******/
 .sidebar {
-    flex: 0 0 fit-content;
     background-color: #051E34;
     background-image: url(/img/sidebar-bg.png);
 }
@@ -36,7 +35,6 @@ main {
 
 /****** content ******/
 .content {
-    flex-basis: calc(100% - 120px);
     overflow-y: auto;
 }
 
@@ -47,7 +45,7 @@ main {
 /******************************
 ***** CUSTOM MEDIA QUERY ******
 ******************************/
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .sidebar {
         flex: 0 0 70px;
     }
@@ -55,4 +53,4 @@ main {
     .content {
         flex-basis: calc(100% - 70px);
     }
-}
+} */
