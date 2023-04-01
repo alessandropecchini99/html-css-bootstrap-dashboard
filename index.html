@@ -90,11 +90,13 @@
             <div class="col-lg-2 col-sm order-sm-3 py-2">
               <span>Nuovo Studente</span>
               <button class="btn border" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="margin-left: 5px;"><i class="fa-solid fa-plus text-white"></i></button>
-              <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <!-- setting offcanva -->
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                <!-- corpo offcanva -->
                 <div class="offcanvas-body">
                   <form action="new-student">
                     <div class="row">
@@ -206,7 +208,7 @@
                 <table class="table">
                   <thead>
                     <tr>
-                      <th scope="col" class="w-50">Nome</th>
+                      <th scope="col" class="md_w_50 sm_w_25">Nome</th>
                       <th scope="col" class="text-center d-none d-sm-table-cell">Data inizio</th>
                       <th scope="col" class="text-center d-none d-sm-table-cell">ROI</th>
                       <th scope="col" class="text-center">Stato</th>
@@ -372,7 +374,7 @@
                 <div class="card">
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item">
-                      <img src="img/stats.jpeg" alt="stats" class="w-100 px-2">
+                      <img src="img/stats.jpeg" alt="stats" class="w-100">
                       <h5 class="card-title">Utenti attivi</h5>
                       <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                     </li>

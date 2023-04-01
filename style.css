@@ -37,3 +37,24 @@ main {
 .content {
     overflow-y: auto;
 }
+
+/* content media query */
+@media screen and (min-width: 769px) {
+    .md_w_50{
+        width: 50%;
+    }
+
+    .offcanvas {
+        width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .xs_w_25 {
+        width: 25%;
+    }
+
+    .offcanvas {
+        width: 100% !important;
+    }
+}
